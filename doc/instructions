@@ -21,6 +21,9 @@ npm install react-loader-spinner --save
 npm install react-promise-tracker --save
 npm install react-router-dom 
 
+npm install react-datepicker --save
+npm install axios
+
 # Additional Python library  
 pip install python-dateutil - for converting data text to date object.
 
