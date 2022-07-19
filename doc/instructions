@@ -1,49 +1,52 @@
+- Activate Environment
+  python3 -m venv auth
+  C:\dev\reactFlaskMsal>auth\scripts\activate
 
-* Activate Environment
-python3 -m venv auth
-C:\dev\reactFlaskMsal>auth\scripts\activate
+- Run Flask
+  set flask_debug=1
+  flask run
 
-* Run Flask
-set flask_debug=1
-flask run
+pip install -r requirements.txt
 
-pip install -r requirements.txt 
+- List PIP libraries
+  pip freeze > requirements.txt
 
-* List PIP libraries
-pip freeze > requirements.txt
+- npm view react version (18.2.0)
+- node -v (16.13.2)
 
-* Install react-app 
-cd frontend
-npx create-react-app .
+- Install react-app
+  cd frontend
+  npx create-react-app .
 
-* Additional react app
-npm install react-loader-spinner --save
-npm install react-promise-tracker --save
-npm install react-router-dom 
+- Additional react app
+  npm install react-loader-spinner --save
+  npm install react-promise-tracker --save
+  npm install react-router-dom
 
-# Additional Python library  
+  npm install react-datepicker --save
+  npm install axios --save
+
+# Additional Python library
+
 pip install python-dateutil - for converting data text to date object.
 
-
-* Starts the development server.
+- Starts the development server.
   npm run build
-    po
 
-* git init may be required 
-git init
+- git init may be required
+  git init
 
-* Remove git ignore cache
-git rm -rf --cached .
-git add .
+- Remove git ignore cache
+  git rm -rf --cached .
+  git add .
 
-* Check git remote
-git remote -v 
+- Check git remote
+  git remote -v
 
 Please refer to Github.jpg for details on Github operation
 
-* Run React local (go to frontend directory)
-npm run start 
-
+- Run React local (go to frontend directory)
+  npm run start
 
 echo "# mmgapp2" >> README.md
 git init
@@ -52,8 +55,7 @@ git add .
 git commit -m "first commit"
 git push -u origin master
 
-
-***About Flask-Session***
+**_About Flask-Session_**
 
 Original : Flask-Session==0.3.2
 New : pip install git+https://github.com/rayluo/flask-session.git@0.3.x
@@ -65,8 +67,7 @@ package-foo==1.2.3
 git+https://github.com/rayluo/flask-session@0.3.x#egg=flask-session
 package-bar>=2,<3
 
-***Flask-Session***
-
+**_Flask-Session_**
 
 Here is the Power BI Report URL with Filter example:
 
