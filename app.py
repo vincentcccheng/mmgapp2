@@ -706,6 +706,7 @@ def establishSessionData():
    
     if (os.environ['ENVIRONMENT']=="PROD"):
         email = session['email']        
+        email = "su123mf123@outlook.com" 
     else:       
         email = "vincent.cheng@macys.com" 
         email = "su123mf123@outlook.com" 
