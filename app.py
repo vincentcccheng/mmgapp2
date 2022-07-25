@@ -512,7 +512,7 @@ def save_inspection():
     if (session.get("email")):
          updated_by = session.get("email")
     else:
-         updated_by = "vincent.cheng@macys.com"
+         updated_by = "vincent.cheng@macys.com"   
     
     # Convert dictionary object into string, this is for change tracking only
     misc_str = json.dumps(misc)   
@@ -708,6 +708,7 @@ def establishSessionData():
         email = session['email']        
     else:       
         email = "vincent.cheng@macys.com" 
+        email = "su123mf123@outlook.com" 
              
     col = db["userProfile"]
 
