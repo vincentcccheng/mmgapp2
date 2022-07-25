@@ -705,11 +705,9 @@ def establishSessionData():
     email =""
    
     if (os.environ['ENVIRONMENT']=="PROD"):
-        email = session['email']        
-        email = "su123mf123@outlook.com" 
+        email = session['email']                
     else:       
-        email = "vincent.cheng@macys.com" 
-        email = "su123mf123@outlook.com" 
+        email = "vincent.cheng@macys.com"         
              
     col = db["userProfile"]
 
