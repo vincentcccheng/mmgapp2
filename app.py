@@ -1769,10 +1769,11 @@ def pastXdaysResult():
     #results = col.find(query).limit(15)
     results = col.find(query)
 
-    query_sort = [  ("main.inspection_date",pymongo.DESCENDING), ("_id",pymongo.ASCENDING)]    
-    #results = col.find( query_filter).sort(query_sort).limit(100)
-    results = col.find(query).sort(query_sort)
-    results = col.find(query)
+    query_col = {"_id":1, "main" : 1, "misc.final_result": 1, "misc.qa_type":1, "misc.mqa":1, "misc.sqa":1}
+
+    query_sort = [  ("main.inspection_date",pymongo.DESCENDING), ("_id",pymongo.ASCENDING)]           
+    results = col.find(query, query_col).sort(query_sort)
+    #results = col.find(query)    
     
     # query_filter =""
     # if session.get('user'):   ##  prod
