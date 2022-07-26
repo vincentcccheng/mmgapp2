@@ -1,5 +1,6 @@
 Release 2022.99
 - Fix past insepction day page by solving sorting issue
+- Correct MISC radiobutton 
 
 Release 2022.98  
 - Fix React Start Up Problem 
