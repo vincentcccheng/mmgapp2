@@ -1750,11 +1750,10 @@ def pastXdaysResult():
     first = today.replace(day=1)
     lastDayLastMonth = first - datetime2.timedelta(days=1)
     lastDay2MonthsAgo = lastDayLastMonth.replace(day=1)  - datetime2.timedelta(days=1)
-    #firstLastMonth = lastMonth.replace(day=1)
 
+    #firstLastMonth = lastMonth.replace(day=1)
     # print(firstLastMonth.strftime("%D"))
     # print(firstLastMonth.strftime("%Y%m"))
-
     #firstLastMonthISO = firstLastMonth.strftime("%Y-%m-%dT%H:%M:%SZ")     
     #firstLastMonthISOString = dateutil.parser.parse(firstLastMonthISO)
 
@@ -1773,6 +1772,7 @@ def pastXdaysResult():
     query_sort = [  ("main.inspection_date",pymongo.DESCENDING), ("_id",pymongo.ASCENDING)]    
     #results = col.find( query_filter).sort(query_sort).limit(100)
     results = col.find(query).sort(query_sort)
+    results = col.find(query)
     
     # query_filter =""
     # if session.get('user'):   ##  prod
